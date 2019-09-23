@@ -1,14 +1,12 @@
 public class Hello {
     public static void main(String[] args) {
-        String text = "includes text";
-        int wholeNumber = 123;
-        double decimalNumber = 3.141592653;
-        boolean isTrue = true;
+        int amount = 9000;
+        double quantity = 0.1;
+        String name = "Zetor";
 
-        System.out.println("The variable's type is text. Its value is " + text);
-        System.out.println("The variable's type is integer. Its value is  " + wholeNumber);
-        System.out.println("The variable's type is decimal number. Its value is " + decimalNumber);
-        System.out.println("The variable's type is truth value. Its value is " + isTrue);
-
+        System.out.println("Chickens: " + amount);
+        System.out.println("Bacon (kg):  " + quantity);
+        System.out.println("A tractor: " + name);
+        System.out.println("In a nutshell: " + amount + ", " + quantity + ", " + name);
     }
 }
