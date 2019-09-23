@@ -2,12 +2,16 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
-        System.out.println("Type a number");
+        System.out.println("Type your name");
         Scanner reader = new Scanner(System.in);
-        int firstValue = Integer.parseInt(reader.nextLine());
-        System.out.println("Type a second number");
-        int secondValue = Integer.parseInt(reader.nextLine());
-        int sum = Math.max(firstValue, secondValue);
-        System.out.println("The bigger number is: " + sum);
+        String firstName = reader.nextLine();
+        System.out.println("Type your age");
+        int firstAge = Integer.parseInt(reader.nextLine());
+        System.out.println("Type your name");
+        String secondName = reader.nextLine();
+        System.out.println("Type your age");
+        int secondAge = Integer.parseInt(reader.nextLine());
+        int sum = firstAge + secondAge;
+        System.out.println(firstName + " and " + secondName + " are " + sum + " years old in total");
     }
 }
