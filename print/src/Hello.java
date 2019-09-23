@@ -1,12 +1,8 @@
 public class Hello {
     public static void main(String[] args) {
-        int amount = 9000;
-        double quantity = 0.1;
-        String name = "Zetor";
-
-        System.out.println("Chickens: " + amount);
-        System.out.println("Bacon (kg):  " + quantity);
-        System.out.println("A tractor: " + name);
-        System.out.println("In a nutshell: " + amount + ", " + quantity + ", " + name);
+        int hourSeconds = 3600;
+        int secondsInDay = hourSeconds * 24;
+        int secondsInYear = secondsInDay * 365;
+        System.out.println("There are " + secondsInYear + " seconds in a year");
     }
 }
