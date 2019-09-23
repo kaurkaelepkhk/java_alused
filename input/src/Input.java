@@ -7,6 +7,7 @@ public class Input {
         int firstValue = Integer.parseInt(reader.nextLine());
         System.out.println("Type a second number");
         int secondValue = Integer.parseInt(reader.nextLine());
-        System.out.println("Sum of the numbers: " + (firstValue + secondValue));
+        int sum = firstValue / secondValue;
+        System.out.println("Sum of the numbers: " + firstValue + " / " + secondValue + " = " + sum);
     }
 }
