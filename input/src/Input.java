@@ -9,10 +9,14 @@ public class Input {
 //        printSquare(4);
 //        printSquare(4);
 //        printRectangle(17, 3);
-        printTriangle(4);
+//        printTriangle(4);
+        christmasTree(10);
     }
     public static void printStars(int amountOfStars) {
             System.out.print("*");
+    }
+    public static void printSpace(int amountOfSpace) {
+        System.out.println();
     }
     public static void printSquare(int amount) {
         int i = 0;
@@ -39,7 +43,16 @@ public class Input {
             for (j = 0; j < i; j++) {
                 printStars(size);
             }
-            System.out.println();
+            printSpace(size);
+        }
+    }
+    public static void christmasTree(int height) {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < height - i; j++)
+                System.out.print(" ");
+            for (int k = 0; k < (2 * i + 1); k++)
+                printStars(height);
+            printSpace(height);
         }
     }
 }
