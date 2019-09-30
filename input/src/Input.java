@@ -2,10 +2,16 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
-        System.out.println("Type a number");
+        System.out.println("Type a first number");
         Scanner reader = new Scanner(System.in);
-        int arv = Integer.parseInt(reader.nextLine());
-        String arvCalc = (arv % 2 == 0) ? "odd" : "even";
-        System.out.println("Number " + arv + " is " + arvCalc);
+        int firstValue = Integer.parseInt(reader.nextLine());
+        System.out.println("Type a second number");
+        int secondValue = Integer.parseInt(reader.nextLine());
+        if (firstValue == secondValue) {
+            System.out.println("The numbers are equal");
+        } else {
+            int sum = Math.max(firstValue, secondValue);
+            System.out.println("The bigger number is: " + sum);
+        }
     }
 }
