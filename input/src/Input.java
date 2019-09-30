@@ -5,12 +5,7 @@ public class Input {
         Scanner reader = new Scanner(System.in);
         System.out.println("Type a number");
         int value = Integer.parseInt(reader.nextLine());
-        int result = 1;
-        int i = 0;
-        while (i < value) {
-            i++;
-            result *= i;
-        }
-        System.out.println("The result is: " + result);
+        int result = (int)Math.pow(2, value);
+        System.out.println("The result is " + (result * 2 - 1));
     }
 }
