@@ -2,10 +2,17 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
-        System.out.println("Enter your age");
+        System.out.println("Enter username");
         Scanner reader = new Scanner(System.in);
-        int value = Integer.parseInt(reader.nextLine());
-        String output = (value >= 0 && value <= 120) ? "OK" : "Impossible";
-        System.out.println(output);
+        String username = reader.nextLine();
+        System.out.println("Enter password");
+        String password = reader.nextLine();
+        if( username.equals("alex") && password.equals("mightyducks")) {
+            System.out.println("Hello Alex, you're now logged in");
+        } else if ( username.equals("emily") && password.equals("cat")) {
+            System.out.println("Hello Emily, you're now logged in");
+        } else {
+            System.out.println("Username or password was invalid!");
+        }
     }
 }
