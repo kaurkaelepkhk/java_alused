@@ -3,15 +3,13 @@ import java.util.Scanner;
 public class Input {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.println("First");
+        System.out.println("Type a number");
         int value = Integer.parseInt(reader.nextLine());
-        System.out.println("Second");
-        int value1 = Integer.parseInt(reader.nextLine());
-        int result = 0;
-        int i = value;
-        while (i <= value1) {
-            result += i;
+        int result = 1;
+        int i = 0;
+        while (i < value) {
             i++;
+            result *= i;
         }
         System.out.println("The result is: " + result);
     }
