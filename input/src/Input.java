@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
-        while (true) {
-            System.out.println("Enter your password");
-            Scanner reader = new Scanner(System.in);
-            String password = reader.nextLine();
-            if( password.equals("carrot")) {
-                System.out.println("Right");
-                System.out.println("Secret is: Secret");
-                break;
-            } else if (!password.equals("carrot")) {
-                System.out.println("Wrong");
-            }
-        }
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+        int read;
+
+        System.out.println("Type the first number:");
+        sum = sum + Integer.parseInt(reader.nextLine());
+        System.out.println("Type the second number:");
+        sum = sum + Integer.parseInt(reader.nextLine());
+        System.out.println("Type the third number:");
+        sum = sum + Integer.parseInt(reader.nextLine());
+        System.out.println("The sum is " + sum);
     }
 }
