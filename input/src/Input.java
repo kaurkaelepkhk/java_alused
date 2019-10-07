@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
 public class Input {
-    public static int sum(int a, int b, int c, int d) {
-        int sum = a + b + c + d;
-        return sum;
+    public static int least(int a, int b) {
+        return Math.min(a, b);
     }
     public static void main(String[] args) {
-        int answer = sum(4, 3, 6, 1);
-        System.out.println("sum: " + answer);
+        int answer = least(2, 7);
+        System.out.println("Least: " + answer);
     }
 }
