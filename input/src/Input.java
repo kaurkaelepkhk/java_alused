@@ -2,24 +2,25 @@ import java.util.*;
 import java.util.Scanner;
 
 public class Input {
-    public static double average(ArrayList<Integer> list) {
-        double sum = 0;
-        double divideBy = list.size();
-        for (Integer a : list) {
-            sum+=a;
+    public static ArrayList<Integer> lengths(ArrayList<String> list) {
+        ArrayList<Integer> lengthList = new ArrayList<Integer>();
+        int num = 0;
+        for (String a : list) {
+            num = a.length();
+            lengthList.add(num);
         }
-        return sum / divideBy;
+        return lengthList;
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(3);
-        list.add(2);
-        list.add(7);
-        list.add(2);
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("Hallo");
+        list.add("Moi");
+        list.add("Benvenuto!");
+        list.add("badger badger badger badger");
+        ArrayList<Integer> lengths = lengths(list);
 
-        System.out.println("The average is: " + average(list));
+        System.out.println("The lengths of the Strings: " + lengths);
     }
-
 
 }
