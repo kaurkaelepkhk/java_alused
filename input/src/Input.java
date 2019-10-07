@@ -5,8 +5,8 @@ public class Input {
         Scanner reader = new Scanner(System.in);
         System.out.println("Type a word");
         String word = reader.nextLine();
-        System.out.println("Length of the first part");
-        int wordlength = Integer.parseInt(reader.nextLine());
-        System.out.println("Result: " + word.substring(0, wordlength));
+        System.out.println("Length of the end part");
+        int lengthOfWord = Integer.parseInt(reader.nextLine());
+        System.out.println("Result: " + word.substring(word.length() - lengthOfWord));
     }
 }
