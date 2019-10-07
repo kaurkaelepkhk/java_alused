@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class Input {
-    public static int greatest(int a, int b, int c) {
-        return Math.max(a, Math.max(b, c));
+    public static double average(int a, int b, int c, int d) {
+        int sum = a + b + c + d;
+        return sum / 4.0;
     }
     public static void main(String[] args) {
-        int answer =  greatest(2, 7, 3);
-        System.out.println("Greatest: " + answer);
+        double answer = average(4, 3, 6, 1);
+        System.out.println("average: " + answer);
     }
 }
