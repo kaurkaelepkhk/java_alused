@@ -5,6 +5,6 @@ public class Input {
         Scanner reader = new Scanner(System.in);
         System.out.println("Type your name");
         String value = reader.nextLine();
-        System.out.println("Length of your name: " + value.length());
+        System.out.println("First character: " + value.charAt(0));
     }
 }
