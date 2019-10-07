@@ -1,26 +1,23 @@
 import java.util.*;
-import java.util.Scanner;
 
 public class Input {
-    public static ArrayList<Integer> lengths(ArrayList<String> list) {
-        ArrayList<Integer> lengthList = new ArrayList<Integer>();
-        int num = 0;
-        for (String a : list) {
-            num = a.length();
-            lengthList.add(num);
+    public static int greatest(ArrayList<Integer> list) {
+        int biggest = list.get(0);
+        for (int i : list) {
+            if (i > biggest) {
+                biggest = i;
+            }
         }
-        return lengthList;
+        return biggest;
     }
 
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<String>();
-        list.add("Hallo");
-        list.add("Moi");
-        list.add("Benvenuto!");
-        list.add("badger badger badger badger");
-        ArrayList<Integer> lengths = lengths(list);
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
 
-        System.out.println("The lengths of the Strings: " + lengths);
+        System.out.println("The greatest number is: " + greatest(list));
     }
-
 }
