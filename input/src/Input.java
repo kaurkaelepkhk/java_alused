@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
 public class Input {
+    public static String reverse(String text) {
+        int i;
+        String reversed = "";
+        for (i = text.length() - 1; i >= 0; i--) {
+            reversed+=text.charAt(i);
+        }
+        return reversed;
+    }
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.println("Type the first word");
-        String word1 = reader.nextLine();
-        System.out.println("Type the second word");
-        String word2 = reader.nextLine();
-        if (word1.indexOf(word2) != -1) {
-            System.out.println("The word '" + word2 + "' is found in the word '" + word1 + "'");
-        } else {
-            System.out.println("The word '" + word2 + "' is not found in the word '" + word1 + "'");
-        }
+        System.out.print("Type in your text: ");
+        String output = reader.nextLine();
+        System.out.println("In reverse order: " + reverse(output));
     }
 }
