@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
 public class Input {
-    public static double average(int a, int b, int c, int d) {
-        int sum = a + b + c + d;
-        return sum / 4.0;
-    }
     public static void main(String[] args) {
-        double answer = average(4, 3, 6, 1);
-        System.out.println("average: " + answer);
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Type your name");
+        String value = reader.nextLine();
+        System.out.println("Length of your name: " + value.length());
     }
 }
