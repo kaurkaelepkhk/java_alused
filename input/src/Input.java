@@ -7,11 +7,6 @@ public class Input {
         String value = reader.nextLine();
         int i;
         for (i = 0; i < value.length(); i++) {
-            if(i >= 3) {
-                return;
-            } else if ( value.length() < 3) {
-                return;
-            }
             System.out.println((i + 1) + ". character: " + value.charAt(i));
         }
     }
