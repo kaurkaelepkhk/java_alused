@@ -2,12 +2,13 @@ import java.util.*;
 import java.util.Scanner;
 
 public class Input {
-    public static int sum(ArrayList<Integer> list) {
-        int sum = 0;
+    public static double average(ArrayList<Integer> list) {
+        double sum = 0;
+        double divideBy = list.size();
         for (Integer a : list) {
             sum+=a;
         }
-        return sum;
+        return sum / divideBy;
     }
 
     public static void main(String[] args) {
@@ -17,11 +18,8 @@ public class Input {
         list.add(7);
         list.add(2);
 
-        System.out.println("The sum: " + sum(list));
-
-        list.add(10);
-
-        System.out.println("the sum: " + sum(list));
+        System.out.println("The average is: " + average(list));
     }
+
 
 }
