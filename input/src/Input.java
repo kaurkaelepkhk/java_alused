@@ -17,20 +17,24 @@ public class Input {
     public static void removeFirst(ArrayList<String> list) {
         list.remove(0);
     }
+    public static void removeLast(ArrayList<String> list) {
+        list.remove(countItems(list) - 1);
+    }
     public static void main(String[] args) {
-        ArrayList<String> programmingLanguages = new ArrayList<String>();
-        programmingLanguages.add("Pascal");
-        programmingLanguages.add("Java");
-        programmingLanguages.add("Python");
-        programmingLanguages.add("Ruby");
-        programmingLanguages.add("C++");
+        ArrayList<String> brothers = new ArrayList<String>();
+        brothers.add("Dick");
+        brothers.add("Henry");
+        brothers.add("Michael");
+        brothers.add("Bob");
 
-        print(programmingLanguages);
+        System.out.println("brothers:");
+        System.out.println(brothers);
+// sorting brothers
+        Collections.sort(brothers);
 
-        removeFirst(programmingLanguages);
+// removing the last item
+        removeLast(brothers);
 
-        System.out.println();  // prints an empty line
-
-        print(programmingLanguages);
+        System.out.println(brothers);
     }
 }
