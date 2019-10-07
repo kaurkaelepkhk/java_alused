@@ -2,39 +2,26 @@ import java.util.*;
 import java.util.Scanner;
 
 public class Input {
-    public static void print(ArrayList<String> printed) {
-        for (String word : printed) {
-            System.out.println( word );
+    public static int sum(ArrayList<Integer> list) {
+        int sum = 0;
+        for (Integer a : list) {
+            sum+=a;
         }
+        return sum;
     }
-    public static int countItems(ArrayList<String> list) {
-        int i = 0;
-        for (String word : list) {
-            i++;
-        }
-        return i;
-    }
-    public static void removeFirst(ArrayList<String> list) {
-        list.remove(0);
-    }
-    public static void removeLast(ArrayList<String> list) {
-        list.remove(countItems(list) - 1);
-    }
+
     public static void main(String[] args) {
-        ArrayList<String> brothers = new ArrayList<String>();
-        brothers.add("Dick");
-        brothers.add("Henry");
-        brothers.add("Michael");
-        brothers.add("Bob");
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(3);
+        list.add(2);
+        list.add(7);
+        list.add(2);
 
-        System.out.println("brothers:");
-        System.out.println(brothers);
-// sorting brothers
-        Collections.sort(brothers);
+        System.out.println("The sum: " + sum(list));
 
-// removing the last item
-        removeLast(brothers);
+        list.add(10);
 
-        System.out.println(brothers);
+        System.out.println("the sum: " + sum(list));
     }
+
 }
