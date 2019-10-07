@@ -12,7 +12,7 @@ public class Input {
             words.add(output);
         }
         System.out.println("You typed the following words: ");
-        Collections.reverse(words);
+        Collections.sort(words);
         for (String word : words) {
             System.out.println(word);
         }
