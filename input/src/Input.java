@@ -2,11 +2,13 @@ import java.util.*;
 
 public class Input {
     public static void main(String[] args) {
-        Account MattAccount = new Account("Matt's account",1000);
-        Account MyAccount = new Account("My account",0);
-        MattAccount.withdrawal(100);
-        MyAccount.deposit(20);
-        System.out.println(MattAccount.toString());
-        System.out.println(MyAccount.toString());
+        Account accountA = new Account("A",100);
+        Account accountB = new Account("B",0);
+        Account accountC = new Account("C",0);
+        accountA.transfer(accountA, accountB, 50);
+        accountB.transfer(accountB, accountC, 25);
+        System.out.println(accountA);
+        System.out.println(accountB);
+        System.out.println(accountC);
     }
 }
