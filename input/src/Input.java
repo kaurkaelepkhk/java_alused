@@ -2,14 +2,7 @@ import java.util.*;
 
 public class Input {
     public static void main(String[] args) {
-        Menu item = new Menu();
-        item.addMeal("Hamburger");
-        item.addMeal("Fish'n'Chips");
-        item.addMeal("Sauerkraut");
-        item.addMeal("Hamburger");
-        item.printMeals();
-        item.clearMenu();
-        item.addMeal("Sauerkraut");
-        item.printMeals();
+        LyyraCard card = new LyyraCard(50);
+        System.out.println(card);
     }
 }
