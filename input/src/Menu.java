@@ -16,4 +16,7 @@ public class Menu {
             System.out.println(i);
         }
     }
+    public void clearMenu() {
+        this.meals.clear();
+    }
 }

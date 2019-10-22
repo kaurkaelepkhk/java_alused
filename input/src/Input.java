@@ -8,5 +8,8 @@ public class Input {
         item.addMeal("Sauerkraut");
         item.addMeal("Hamburger");
         item.printMeals();
+        item.clearMenu();
+        item.addMeal("Sauerkraut");
+        item.printMeals();
     }
 }
