@@ -2,13 +2,13 @@ import java.util.*;
 
 public class Input {
     public static void main(String[] args) {
-        BoundedCounter counter = new BoundedCounter(4);
+        BoundedCounter counter = new BoundedCounter(14);
         System.out.println("Value at start: " + counter );
 
         int i = 0;
-        while ( i < 10) {
+        while ( i < 16){
             counter.next();
-            System.out.println("Value: " + counter );
+            System.out.println("value: " + counter );
             i++;
         }
     }

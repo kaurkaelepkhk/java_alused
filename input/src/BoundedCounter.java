@@ -13,6 +13,6 @@ public class BoundedCounter {
         }
     }
     public String toString() {
-        return "" + this.value;
+        return this.value < 10 ? "0" + this.value : "" + this.value;
     }
 }
