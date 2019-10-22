@@ -11,4 +11,9 @@ public class Menu {
             this.meals.add(meal);
         }
     }
+    public void printMeals() {
+        for (String i : meals) {
+            System.out.println(i);
+        }
+    }
 }
