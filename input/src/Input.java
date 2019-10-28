@@ -3,12 +3,13 @@ import java.util.*;
 public class Input {
     public static void main(String[] args) {
         NumberStatistics stats = new NumberStatistics();
-        stats.addNumber(3);
-        stats.addNumber(5);
-        stats.addNumber(1);
-        stats.addNumber(2);
-        System.out.println("Amount: " + stats.amountOfNumbers());
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Type numbers");
+        int input = 0;
+        while (input != -1) {
+            stats.addNumber(input);
+            input = reader.nextInt();
+        }
         System.out.println("sum: " + stats.sum());
-        System.out.println("average: " + stats.average());
     }
 }

@@ -16,7 +16,7 @@ public class NumberStatistics {
         return this.sum;
     }
     public double average() {
-        int i = this.sum / this.amountOfNumbers;
+        double i = (double) this.sum / this.amountOfNumbers;
         return i;
     }
 }
